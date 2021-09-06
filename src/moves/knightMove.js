@@ -1,6 +1,6 @@
 export const canMoveKnight = (toX, toY, pieceType, piecePos) => {
   const [x, y] = piecePos[pieceType];
-  const isAlly = false;
+  let isAlly = false;
   const isOccupied = Object.keys(piecePos).find(
     (key, index) => piecePos[key][0] === toX && piecePos[key][1] === toY
   );
